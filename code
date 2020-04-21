@@ -1,0 +1,23 @@
+from datetime import date # import date from system 
+y = date.today().year #getting current year from system 
+name=input("enter your name:")
+name = name.title()
+age=input("enter your age:")
+age=int(age)
+#calculate the year in which you achieve 100 year old
+b=y-age
+b=b+100
+#calculate remaining year to achieve 100
+x=age
+a=0
+while x < 100:
+  x += 1
+  a+=1
+#printing results
+c=2
+z=int(input("how many copys of result you need?\n"))
+while c<=z:
+    print("Your name is " +name+ " and your age is %s year old  after %s years you will be 100 year old and in %s you reach 100 year old."%(age,a,b) )
+    c+=1
+#this is because if the user enter zero than its show atleast one result
+print("Your name is " +name+ " and your age is %s year old  after %s years you will be 100 year old and in %s you reach 100 year old."%(age,a,b) )
